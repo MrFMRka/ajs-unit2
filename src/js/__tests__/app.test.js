@@ -45,10 +45,5 @@ test('sort not toBe', () => {
     { name: 'лучник', health: 50 },
     { name: 'мечник', health: 10 },
   ];
-  // expect(sortPlayers(players)).not.toBe(result);
-  // expect(sortPlayers(players, result)).not.toBe(result);
-  // expect(sortPlayers(players)).not.toEqual(true);
-
   expect(sortPlayers(players)).toEqual(result);
-  expect(sortPlayers(result)).not.toBe(players);
 });
